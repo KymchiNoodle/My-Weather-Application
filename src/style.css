@@ -1,14 +1,36 @@
+.search-form-input {
+  background-color: #e4e4e4;
+  border-radius: 10px;
+  border: none;
+  width: 60%;
+  padding: 11px;
+  font-family: "Outfit";
+  font-size: medium;
+}
+.search-form-button {
+  border-radius: 8px;
+  width: 15%;
+  padding: 6px;
+  box-shadow: 0 5px 12px;
+  background-color: #9e7878;
+  font-size: medium;
+  font-family: "Outfit";
+}
+.search-form {
+  display: flex;
+  justify-content: left;
+}
+
 .weather-app {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.main-info,
-footer {
+.main-info {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: thin;
   font-style: normal;
 }
 body {
@@ -72,4 +94,10 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   color: #444;
+}
+footer {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: thin;
+  font-style: italic;
 }
