@@ -15,12 +15,13 @@
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter your City..."
             required
             class="search-form-input"
+            id="search-form-input"
           />
           <input type="submit" value="search" class="search-form-button" />
         </form>
@@ -29,12 +30,12 @@
         <div class="main-info">
           <section class="current-weather">
             <h1 class="location">British Virgin Islands</h1>
-            <div class="temp-details">Wednesday 18:10, mostly clear <br /></div>
+            <div class="temp-details">Wednesday 18:10 <br /></div>
             <div>
               <span class="icon"> 🌙</span>
               <span class="temp-value"> 30°C</span><br />
-              <span class="feels-like"> Feels like:--°C</span><br />
-              <span class="condition">--</span><br />
+              <span class="feels-like"> Feels like:--°C</span>
+              <span class="condition">mostly clear</span><br />
               <span class="humidity-wind">Humidity: 70%, Wind: 2.5km/h</span>
             </div>
           </section>
@@ -61,5 +62,6 @@
         <a href="https://startwithus.netlify.app/" target="_blank"> Netlify </a>
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
