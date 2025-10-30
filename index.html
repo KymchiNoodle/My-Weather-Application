@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
-    <title>Daily Weather App</title>
+    <title>Weather App</title>
   </head>
   <body>
     <div class="weather-app">
@@ -29,14 +30,16 @@
       <main>
         <div class="main-info">
           <section class="current-weather">
-            <h1 class="location">British Virgin Islands</h1>
+            <h1 class="location" id="location">British Virgin Islands</h1>
             <div class="temp-details">Wednesday 18:10 <br /></div>
             <div>
-              <span class="icon"> 🌙</span>
-              <span class="temp-value"> 30°C</span><br />
-              <span class="feels-like"> Feels like:--°C</span>
-              <span class="condition">mostly clear</span><br />
-              <span class="humidity-wind">Humidity: 70%, Wind: 2.5km/h</span>
+              <span class="icon" id="icon"> 🌙</span>
+              <span class="temp-value" id="temp-value"> 30°C</span><br />
+              <span class="feels-like" id="feels-like"> Feels like:--°C</span>
+              <span class="condition" id="condition">mostly clear</span><br />
+              <span class="humidity-wind" id="humidity&wind"
+                >Humidity: 70%, Wind: 2.5km/h</span
+              >
             </div>
           </section>
 
