@@ -3,37 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Daily Weather App</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter your City..." required />
-        <input type="submit" value="search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>British Virgin Islands</h1>
-        <p>
-          Wednesday 18:10, mostly clear <br />
-          Humidity: 70%, Wind: 2.5km/h
-        </p>
-      </div>
-      <div>🌙 30°C</div>
-    </main>
-    <footer>
-      Coded by
-      <a href="https://github.com/KymchiNoodle" target="_blank"> Kimoi Tate </a>
-      , open-sourced on
-      <a
-        href="https://github.com/KymchiNoodle/My-Weather-Application"
-        target="_blank"
-      >
-        GitHub
-      </a>
-      and hosted on
-      <a href="https://startwithus.netlify.app/" target="_blank"> Netlify </a>
-    </footer>
+    <div class="weather-app">
+      <header>
+        <form id="weather-details">
+          <input type="search" placeholder="Enter your City..." required />
+          <input type="submit" value="search" />
+        </form>
+      </header>
+      <main>
+        <div class="main-info">
+          <section class="current-weather">
+            <h1 class="location">British Virgin Islands</h1>
+            <div class="temp-details">Wednesday 18:10, mostly clear <br /></div>
+            <div>
+              <span class="icon"> 🌙</span>
+              <span class="temp-value"> 30°C</span><br />
+              <span class="feels-like"> Feels like:--°C</span><br />
+              <span class="condition">--</span><br />
+              <span class="humidity-wind">Humidity: 70%, Wind: 2.5km/h</span>
+            </div>
+          </section>
+
+          <section class="additional-overview">
+            <h2>Overview</h2>
+            <p class="overview-text">--</p>
+          </section>
+        </div>
+      </main>
+      <footer>
+        Coded by
+        <a href="https://github.com/KymchiNoodle" target="_blank">
+          Kimoi Tate
+        </a>
+        , open-sourced on
+        <a
+          href="https://github.com/KymchiNoodle/My-Weather-Application"
+          target="_blank"
+        >
+          GitHub
+        </a>
+        and hosted on
+        <a href="https://startwithus.netlify.app/" target="_blank"> Netlify </a>
+      </footer>
+    </div>
   </body>
 </html>
