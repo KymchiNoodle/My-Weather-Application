@@ -57,7 +57,7 @@ body {
   margin-bottom: 10px;
   text-align: center;
 }
-.temp-details {
+.time {
   display: flex;
   justify-content: center;
   align-items: baseline;
@@ -70,6 +70,9 @@ body {
 .temp-value {
   font-size: 3rem;
   font-weight: bold;
+}
+.temp-unit {
+  margin-top: ;
 }
 .condition {
   font: 1.2rem;
