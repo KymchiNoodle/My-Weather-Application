@@ -49,6 +49,9 @@ body {
   left: 200px;
   background-size: cover;
   overflow: hidden;
+  margin: 0;
+  justify-content: flex-start;
+  padding-left: 5vw;
 }
 .weather-glass {
   background: rgba(255, 255, 255, 0.15);
@@ -94,7 +97,8 @@ body {
   font-weight: bold;
 }
 .temp-unit {
-  
+  margin-top: 90px;
+  font-size: 20px;
 }
 .condition {
   font-size: 1.3rem;
@@ -122,22 +126,6 @@ body {
   line-height: 1.5;
   color: #444;
 }
-body.clear {
-  background: linear-gradient(120deg, #73c8a9, #373b44);
-}
-body.rain {
-  background: linear-gradient(120deg, #1e3c72, #2a5298);
-}
-body.clouds {
-  background: linear-gradient(120deg, #757f9a, #d7dde8);
-}
-body.snow {
-  background: linear-gradient(120deg, #83a4d4, #b6fbff);
-}
-body.night {
-  background: linear-gradient(120deg, #141e30, #243b55);
-}
-
 footer {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
