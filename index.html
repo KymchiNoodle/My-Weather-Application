@@ -15,6 +15,7 @@
   </head>
   <body>
     <div class="weather-app">
+      <div class="weather-glass">
       <header>
         <form class="search-form" id="search-form">
           <input
@@ -35,19 +36,21 @@
               <br />
             </div>
             <div>
-              <div class="icon" id="icon"></div>
               <span class="temp-value" id="temp"></span>
-              <span class="temp-unit" id="temp-unit">°C</span><br />
-              <div class="feels-like" id="feels-like"></div>
+              <span class="temp-unit" id="temp-unit">°C</span>
+              <div class="icon" id="icon"></div>
               <span class="condition" id="condition"></span><br />
-              <span class="humidity" id="humidity"></span>
-              <span class="wind" id="wind"></span>
+              <div class="feels-like" id="feels-like"></div>
+
             </div>
           </section>
 
-          <section class="additional-overview">
+          <section class="overview">
             <h2>Overview</h2>
-            <p class="overview-text">--</p>
+            <span class="humidity" id="humidity"></span>
+            <span class="wind" id="wind"></span>
+
+            <p class="overview-text">Your day starts here! 😎👍🏾</p>
           </section>
         </div>
       </main>
@@ -67,6 +70,8 @@
         <a href="https://startwithus.netlify.app/" target="_blank"> Netlify </a>
       </footer>
     </div>
-    <script src="src/index.js"></script>
+    <canvas id="weatherCanvas"></canvas>
+    <script src="config.js"></script>
+    <script src="src/app.js"></script>
   </body>
 </html>
