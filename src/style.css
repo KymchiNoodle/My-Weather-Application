@@ -1,32 +1,41 @@
 .search-form-input {
-  background-color: #e4e4e4;
-  border-radius: 10px;
   border: none;
-  width: 60%;
-  padding: 11px;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  width: 180px;
   font-family: "Outfit";
-  font-size: medium;
 }
 .search-form-button {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  cursor: pointer;
+  color: #041925;
+  font-size: 1.2rem;
   border-radius: 8px;
-  width: 15%;
-  padding: 6px;
-  box-shadow: 0 5px 12px;
-  background-color: #9e7878;
-  font-size: medium;
+  padding: 6px 10px;
+  transition: 0.3s;
   font-family: "Outfit";
 }
+.search-form-button:hover {
+  background: rgba(99, 180, 218, 0.4);
+}
+
 .search-form {
+  position: absolute;
+  top: 10px;
+  left: 400px;
   display: flex;
-  justify-content: left;
+  align-items: center;
+  gap: 8px;
+  background: rgba(240, 231, 231, 0.5);
+  padding: 10px 15px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 16px rgb(0, 0, 0);
+  z-index: 5;
 }
-
-.weather-app {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .main-info {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
@@ -34,15 +43,31 @@
   font-style: normal;
 }
 body {
-  color: #222;
+  background: linear-gradient(120deg, #4f8ef7, #b6d9ff);
   display: flex;
-  justify-content: center;
   align-items: center;
+  left: 200px;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: background 1s ease-in-out;
+  overflow: hidden;
 }
+.weather-glass {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 30px;
+  width: 320px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+.temp {
+  font-size: 4rem;
+  font-weight: bold;
+  display: block;
+}
+
 .current-weather {
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(20px);
@@ -65,17 +90,15 @@ body {
   margin-bottom: 10px;
 }
 .temp-value {
-  font-size: 3rem;
+  font-size: 50px;
   font-weight: bold;
 }
 .temp-unit {
-  margin-top: ;
+  
 }
 .condition {
-  font: 1.2rem;
-  color: #7a7070;
+  font-size: 1.3rem;
 }
-.feels-like,
 .humidity-wind {
   display: flex;
   justify-content: space-between;
@@ -83,11 +106,15 @@ body {
   margin-top: 10px;
   color: #555;
 }
-.additional-overview h2 {
+.feels-like {
+  color: #193480;
+}
+.overview h2 {
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  margin-top: 20px;
   text-align: center;
-  color: #333;
+  opacity: 0.9;
+  color: #041925;
 }
 .overview-text {
   text-align: center;
@@ -95,9 +122,26 @@ body {
   line-height: 1.5;
   color: #444;
 }
+body.clear {
+  background: linear-gradient(120deg, #73c8a9, #373b44);
+}
+body.rain {
+  background: linear-gradient(120deg, #1e3c72, #2a5298);
+}
+body.clouds {
+  background: linear-gradient(120deg, #757f9a, #d7dde8);
+}
+body.snow {
+  background: linear-gradient(120deg, #83a4d4, #b6fbff);
+}
+body.night {
+  background: linear-gradient(120deg, #141e30, #243b55);
+}
+
 footer {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
-  font-weight: thin;
   font-style: italic;
+  font-size: 15px;
+  color: #515c63;
 }
